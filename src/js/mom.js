@@ -6,7 +6,7 @@ var momObj=function(){
     this.y;
     this.angle;
     // this.bigEye=new Image();
-    this.bigBody=new Image();
+    // this.bigBody=new Image();
     // this.bigTail=new Image();
 
     this.momTailTimer=0;
@@ -23,7 +23,7 @@ momObj.prototype.init=function(){
     this.y=canHeight*0.5;
     this.angle=0;
     // this.bigEye.src="./src/bigEye0.png";
-    this.bigBody.src="./src/bigSwim0.png";
+    // this.bigBody.src="./src/bigSwim0.png";
     // this.bigTail.src="./src/bigTail0.png";
 
 };

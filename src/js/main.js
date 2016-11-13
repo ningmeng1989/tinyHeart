@@ -50,7 +50,7 @@ function init() {
     canWidth = can1.width;
     canHeight = can1.height;
 
-    bgPic.src = "./src/background.jpg";
+    bgPic.src = "./imgs/background.jpg";
 
     ane=new aneObj();
     ane.init();
@@ -69,40 +69,40 @@ function init() {
 
     for(var i=0;i<8;i++){
         babyTail[i]=new Image();
-        babyTail[i].src="./src/babyTail"+i+".png";
-        //babyTail[i].src="./src/babyTail0.png";
+        babyTail[i].src="./imgs/babyTail"+i+".png";
+        //babyTail[i].src="./imgs/babyTail0.png";
     }
 
     for(var i=0;i<2;i++){
         babyEye[i]=new Image();
-        babyEye[i].src="./src/babyEye"+i+".png";
+        babyEye[i].src="./imgs/babyEye"+i+".png";
     }
 
     for(var i=0;i<20;i++){
         babyBody[i]=new Image();
-        babyBody[i].src="./src/babyFade"+i+".png";
+        babyBody[i].src="./imgs/babyFade"+i+".png";
     }
 
     for(var i=0;i<8;i++){
         momTail[i]=new Image();
-        momTail[i].src="./src/bigTail"+i+".png";
+        momTail[i].src="./imgs/bigTail"+i+".png";
     }
 
     for(var i=0;i<2;i++){
         momEye[i]=new Image();
-        momEye[i].src="./src/bigEye"+i+".png";
+        momEye[i].src="./imgs/bigEye"+i+".png";
     }
 
     for(var i=0;i<8;i++){
         momBodyOra[i]=new Image();
         momBodyBlue[i]=new Image();
-        momBodyOra[i].src="./src/bigSwim"+i+".png";
-        momBodyBlue[i].src="./src/bigSwimBlue"+i+".png";
+        momBodyOra[i].src="./imgs/bigSwim"+i+".png";
+        momBodyBlue[i].src="./imgs/bigSwimBlue"+i+".png";
     }
 
     for(var i=0;i<7;i++){
         dustPic[i]=new Image();
-        dustPic[i].src="./src/dust"+i+".png";
+        dustPic[i].src="./imgs/dust"+i+".png";
     }
 
     data=new dataObj();

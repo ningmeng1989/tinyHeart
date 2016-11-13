@@ -6,7 +6,7 @@ var babyObj=function(){
     this.y;
     this.angle;
     // this.babyEye=new Image();
-    this.babyBody=new Image();
+    // this.babyBody=new Image();
     //this.babyTail=new Image();
 
     this.babyTailTimer=0;
@@ -24,7 +24,7 @@ babyObj.prototype.init= function () {
     this.y=canHeight*0.5-50;
     this.angle=0;
     // this.babyEye.src="./src/babyEye0.png";
-    this.babyBody.src="./src/babyFade0.png";
+    // this.babyBody.src="./src/babyFade0.png";
     //this.babyTail.src="./src/babyTail0.png";
 };
 babyObj.prototype.draw= function () {

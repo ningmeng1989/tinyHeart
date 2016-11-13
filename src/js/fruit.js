@@ -23,8 +23,8 @@ fruitObj.prototype.init= function () {
         //this.born(i);
         this.fruitType[i]="";
     }
-    this.orange.src="./src/fruit.png";
-    this.blue.src="./src/blue.png";
+    this.orange.src="./imgs/fruit.png";
+    this.blue.src="./imgs/blue.png";
 
 };
 fruitObj.prototype.draw=function(){
