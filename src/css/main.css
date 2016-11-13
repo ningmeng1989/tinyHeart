@@ -38,6 +38,7 @@ body{
 }
 #play_again.show{
     display:block;
+    cursor:pointer;
 }
 #play_again.show:hover{
     opacity:1;

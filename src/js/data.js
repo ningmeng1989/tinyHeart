@@ -1,6 +1,7 @@
 /**
  * Created by JIANBO on 2016/11/12.
  */
+//得分对象
 var dataObj=function(){
     this.fruitNum=0;
     this.double=1;
@@ -23,10 +24,6 @@ dataObj.prototype.draw=function () {
     ctx1.shadowBlur=10;
     ctx1.shadowColor="white";
     ctx1.fillStyle="white";
-    // ctx1.font="30px Verdana";
-    // ctx1.textAlign="center";
-    // ctx1.fillText("num:"+this.fruitNum,w*0.5,h-50);
-    // ctx1.fillText("double:"+this.double,w*0.5,h-80);
     ctx1.fillText("SCORE:"+this.score,w*0.5,h-20);
 
     if(this.gameOver){

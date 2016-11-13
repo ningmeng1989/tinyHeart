@@ -1,11 +1,12 @@
 /**
  * Created by JIANBO on 2016/11/12.
  */
+//海底尘埃
 var dustObj=function () {
-    this.x=[];
-    this.y=[];
-    this.amp=[];
-    this.NO=[];
+    this.x=[];  //位置横坐标
+    this.y=[];  //位置纵坐标
+    this.amp=[];    //振幅
+    this.NO=[];     //尘埃图片序号
 
     this.alpha;
 };
@@ -24,6 +25,6 @@ dustObj.prototype.draw=function(){
     var l=Math.sin(this.alpha);
     for(var i=0;i<this.num;i++){
         var no=this.NO[i];
-        ctx1.drawImage(dustPic[no],this.x[i]+this.amp[i]*l,this.y[i]);
+        ctx2.drawImage(dustPic[no],this.x[i]+this.amp[i]*l,this.y[i]);
     }
 };

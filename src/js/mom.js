@@ -1,34 +1,27 @@
 /**
  * Created by JIANBO on 2016/8/6.
  */
+//大鱼对象
 var momObj=function(){
-    this.x;
-    this.y;
-    this.angle;
-    // this.bigEye=new Image();
-    // this.bigBody=new Image();
-    // this.bigTail=new Image();
+    this.x;     //位置横坐标
+    this.y;     //位置纵坐标
+    this.angle;     //角度
 
-    this.momTailTimer=0;
+    this.momTailTimer=0;    //尾巴序列帧计数，等间隔循环播放
     this.momTailCount=0;
 
-    this.momEyeTimer=0;
+    this.momEyeTimer=0;     //眼睛序列帧计数，闭着的时间间隔默认1s
     this.momEyeCount=0;
     this.momEyeInterval=1000;
 
-    this.momBodyCount=0;
+    this.momBodyCount=0;    //尾巴序列帧计数
 };
 momObj.prototype.init=function(){
     this.x=canWidth*0.5;
     this.y=canHeight*0.5;
     this.angle=0;
 
-    this.momBodyCount=0;
-
-    // this.bigEye.src="./src/bigEye0.png";
-    // this.bigBody.src="./src/bigSwim0.png";
-    // this.bigTail.src="./src/bigTail0.png";
-
+    this.momBodyCount=0;    //初始化时身体序列帧重设为0
 };
 momObj.prototype.draw=function(){
     this.x=lerpDistance(mx,this.x,0.99);
@@ -57,7 +50,6 @@ momObj.prototype.draw=function(){
             this.momEyeInterval=200;
         }
     }
-
 
     ctx1.save();
     ctx1.translate(this.x,this.y);

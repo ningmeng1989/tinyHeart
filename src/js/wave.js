@@ -1,6 +1,7 @@
 /**
  * Created by JIANBO on 2016/11/12.
  */
+//大鱼吃果实水泡对象
 var waveObj=function(){
     this.x=[];
     this.y=[];

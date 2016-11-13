@@ -1,6 +1,7 @@
 /**
  * Created by JIANBO on 2016/11/12.
  */
+//大鱼喂小鱼水泡
 var haloObj=function () {
     this.x=[];
     this.y=[];
