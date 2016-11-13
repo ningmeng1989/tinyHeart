@@ -9,8 +9,11 @@ var dataObj=function(){
     this.alpha=0;
 };
 dataObj.prototype.reset=function () {
-    // this.fruitNum=0;
-    // this.double=1;
+    this.fruitNum=0;
+    this.double=1;
+    this.score=0;
+    this.gameOver=false;
+    this.alpha=0;
 };
 dataObj.prototype.draw=function () {
     var w=can1.width;

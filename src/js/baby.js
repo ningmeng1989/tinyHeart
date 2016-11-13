@@ -23,6 +23,9 @@ babyObj.prototype.init= function () {
     this.x=canWidth*0.5-50;
     this.y=canHeight*0.5-50;
     this.angle=0;
+
+    this.babyBodyCount=0;
+
     // this.babyEye.src="./src/babyEye0.png";
     // this.babyBody.src="./src/babyFade0.png";
     //this.babyTail.src="./src/babyTail0.png";
@@ -63,6 +66,7 @@ babyObj.prototype.draw= function () {
         if(this.babyBodyCount>19){
             this.babyBodyCount=19;
             data.gameOver=true;
+            play_again_show();
         }
     }
 

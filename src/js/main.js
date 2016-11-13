@@ -28,7 +28,10 @@ var halo;
 var dust;
 var dustPic=[];
 
+var play_again_btn;
+
 document.body.onload = game;
+
 function game() {
     init();
     lastTime = Date.now();
@@ -47,6 +50,8 @@ function init() {
 
     can1.addEventListener('mousemove',onMouseMove,false);
 
+    play_again_btn = document.getElementById("play_again");
+
     canWidth = can1.width;
     canHeight = can1.height;
 
@@ -59,10 +64,8 @@ function init() {
     fruit.init();
 
     mom=new momObj();
-    mom.init();
 
     baby=new babyObj();
-    baby.init();
 
     mx=canWidth*0.5;
     my=canHeight*0.5;
@@ -70,7 +73,6 @@ function init() {
     for(var i=0;i<8;i++){
         babyTail[i]=new Image();
         babyTail[i].src="./imgs/babyTail"+i+".png";
-        //babyTail[i].src="./imgs/babyTail0.png";
     }
 
     for(var i=0;i<2;i++){
@@ -113,6 +115,13 @@ function init() {
 
     dust=new dustObj();
     dust.init();
+
+    resetGame();
+}
+function resetGame() {
+    mom.init();
+    baby.init();
+    data.reset();
 }
 function gameloop() {
     requestAnimationFrame(gameloop);
@@ -140,7 +149,15 @@ function onMouseMove(e){
         if(e.offsetX|| e.layerX){
             mx= e.offsetX==undefined? e.layerX: e.offsetX;
             my= e.offsetY==undefined? e.layerY: e.offsetY;
-            //console.log(mx);
         }
     }
+}
+function play_again_show() {
+    play_again_btn.className="show";
+    play_again_btn.addEventListener('click',play_again_exec,false);
+}
+function play_again_exec() {
+    play_again_btn.className="";
+    play_again_btn.removeEventListener('click',play_again_exec);
+    resetGame();
 }
