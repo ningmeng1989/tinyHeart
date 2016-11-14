@@ -44,38 +44,38 @@ function init() {
 
     play_again_btn = document.getElementById("play_again");
 
-    bgPic.src = "./imgs/background.jpg";
+    bgPic.src = "assets/imgs/background.jpg";
 
     //获得大鱼和小鱼的眼睛、身体、尾巴的序列帧
     for(var i=0;i<8;i++){
         babyTail[i]=new Image();
-        babyTail[i].src="./imgs/babyTail"+i+".png";
+        babyTail[i].src="assets/imgs/babyTail"+i+".png";
     }
     for(var i=0;i<2;i++){
         babyEye[i]=new Image();
-        babyEye[i].src="./imgs/babyEye"+i+".png";
+        babyEye[i].src="assets/imgs/babyEye"+i+".png";
     }
     for(var i=0;i<20;i++){
         babyBody[i]=new Image();
-        babyBody[i].src="./imgs/babyFade"+i+".png";
+        babyBody[i].src="assets/imgs/babyFade"+i+".png";
     }
     for(var i=0;i<8;i++){
         momTail[i]=new Image();
-        momTail[i].src="./imgs/bigTail"+i+".png";
+        momTail[i].src="assets/imgs/bigTail"+i+".png";
     }
     for(var i=0;i<2;i++){
         momEye[i]=new Image();
-        momEye[i].src="./imgs/bigEye"+i+".png";
+        momEye[i].src="assets/imgs/bigEye"+i+".png";
     }
     for(var i=0;i<8;i++){
         momBodyOra[i]=new Image();
         momBodyBlue[i]=new Image();
-        momBodyOra[i].src="./imgs/bigSwim"+i+".png";
-        momBodyBlue[i].src="./imgs/bigSwimBlue"+i+".png";
+        momBodyOra[i].src="assets/imgs/bigSwim"+i+".png";
+        momBodyBlue[i].src="assets/imgs/bigSwimBlue"+i+".png";
     }
     for(var i=0;i<7;i++){
         dustPic[i]=new Image();
-        dustPic[i].src="./imgs/dust"+i+".png";
+        dustPic[i].src="assets/imgs/dust"+i+".png";
     }
     // 创建海葵、果实、海水尘埃对象并初始化
     ane=new aneObj();

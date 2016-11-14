@@ -22,8 +22,8 @@ fruitObj.prototype.init= function () {
         this.spd[i]=Math.random()*0.017+0.003;//[0.003,0.02]
         this.fruitType[i]="";
     }
-    this.orange.src="./imgs/fruit.png";
-    this.blue.src="./imgs/blue.png";
+    this.orange.src="assets/imgs/fruit.png";
+    this.blue.src="assets/imgs/blue.png";
 };
 fruitObj.prototype.draw=function(){
     for(var i=0;i<this.num;i++){
