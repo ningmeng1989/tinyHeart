@@ -1,0 +1,6 @@
+#webstorn索引文件
+/.idea/
+/.idea/vcs.xml
+
+#nodejs 模块文件
+/node_modules/
